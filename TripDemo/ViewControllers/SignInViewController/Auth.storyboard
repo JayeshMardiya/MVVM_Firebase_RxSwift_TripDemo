@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="KXv-YV-I6b">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Sign In View Controller-->
+        <scene sceneID="Qrs-F6-eZN">
+            <objects>
+                <viewController storyboardIdentifier="SignInViewController" id="KXv-YV-I6b" customClass="SignInViewController" customModule="TripDemo" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ZUw-NW-GFL">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="kbU-TD-2VZ">
+                                <rect key="frame" x="50" y="368" width="314" height="160"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2x1-qt-9dw">
+                                        <rect key="frame" x="0.0" y="0.0" width="314" height="40"/>
+                                        <color key="backgroundColor" red="0.0" green="0.23529411759999999" blue="0.31372549020000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="2fu-FN-qpN"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="17"/>
+                                        <state key="normal" title="Sign in with Google">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="2"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oWm-2q-XGB">
+                                        <rect key="frame" x="0.0" y="60" width="314" height="40"/>
+                                        <color key="backgroundColor" red="0.0" green="0.23529411759999999" blue="0.31372549020000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="MRt-LJ-waA"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="17"/>
+                                        <state key="normal" title="Sign in with email">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="2"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o83-bm-6Hx">
+                                        <rect key="frame" x="0.0" y="120" width="314" height="40"/>
+                                        <color key="backgroundColor" red="0.0" green="0.23529411759999999" blue="0.31372549020000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="6AM-4S-Ywu"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="17"/>
+                                        <state key="normal" title="Sign up!">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="2"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="kbU-TD-2VZ" firstAttribute="centerX" secondItem="ZUw-NW-GFL" secondAttribute="centerX" id="2OF-Al-2sx"/>
+                            <constraint firstItem="kbU-TD-2VZ" firstAttribute="centerY" secondItem="ZUw-NW-GFL" secondAttribute="centerY" id="8jV-Q5-UM3"/>
+                            <constraint firstItem="kbU-TD-2VZ" firstAttribute="leading" secondItem="OY0-L1-Xk7" secondAttribute="leading" constant="50" id="kRE-zo-rih"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="OY0-L1-Xk7"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="TC0-nt-Jd0"/>
+                    <connections>
+                        <outlet property="emailSignInBtn" destination="oWm-2q-XGB" id="TTS-qY-wbs"/>
+                        <outlet property="emailSignUpBtn" destination="o83-bm-6Hx" id="hJC-iI-eDP"/>
+                        <outlet property="googleSignInBtn" destination="2x1-qt-9dw" id="XGu-sx-kQd"/>
+                        <segue destination="Cse-Iv-TsR" kind="show" identifier="segue_emailAuth" id="xt7-qI-fzO"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rzN-ic-mod" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1603" y="-14"/>
+        </scene>
+        <!--Email Auth Controller-->
+        <scene sceneID="bIz-GM-lLY">
+            <objects>
+                <viewController id="Cse-Iv-TsR" customClass="EmailAuthController" customModule="TripDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Pha-wL-7YB">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="g5V-Y1-bCe">
+                                <rect key="frame" x="50" y="108" width="314" height="280"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Login" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rBd-Zz-MDg">
+                                        <rect key="frame" x="0.0" y="0.0" width="314" height="40"/>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0mU-7U-56t">
+                                        <rect key="frame" x="0.0" y="60" width="314" height="40"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Rib-1R-9DG">
+                                        <rect key="frame" x="0.0" y="120" width="314" height="40"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2zo-mE-nIr">
+                                        <rect key="frame" x="0.0" y="180" width="314" height="40"/>
+                                        <color key="backgroundColor" red="0.0" green="0.23529411759999999" blue="0.31372549020000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="hRV-Wb-Khd"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="18"/>
+                                        <state key="normal" title="Sign Up">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="2"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="znZ-zT-KaP">
+                                        <rect key="frame" x="0.0" y="240" width="314" height="40"/>
+                                        <color key="backgroundColor" red="0.0" green="0.23529411759999999" blue="0.31372549020000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="VEz-gK-Gl2"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="18"/>
+                                        <state key="normal" title="Cancel">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="2"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="g5V-Y1-bCe" firstAttribute="centerX" secondItem="Pha-wL-7YB" secondAttribute="centerX" id="7zf-gt-guC"/>
+                            <constraint firstItem="g5V-Y1-bCe" firstAttribute="leading" secondItem="y0x-FF-awH" secondAttribute="leading" constant="50" id="HCe-Mr-nYB"/>
+                            <constraint firstItem="g5V-Y1-bCe" firstAttribute="top" secondItem="y0x-FF-awH" secondAttribute="top" constant="64" id="XB6-e7-JFm"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="y0x-FF-awH"/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="A6c-bj-VLG" appends="YES" id="0Uv-ec-oTi"/>
+                        </connections>
+                    </view>
+                    <connections>
+                        <outlet property="actionBtn" destination="2zo-mE-nIr" id="c2p-7S-8Na"/>
+                        <outlet property="backgroundTapGesture" destination="A6c-bj-VLG" id="F7b-An-hgB"/>
+                        <outlet property="cancelBtn" destination="znZ-zT-KaP" id="Qnc-gO-xQe"/>
+                        <outlet property="emailTxtField" destination="0mU-7U-56t" id="AUL-J9-xxb"/>
+                        <outlet property="passwordTxtField" destination="Rib-1R-9DG" id="aeW-9t-7Ug"/>
+                        <outlet property="titleLabel" destination="rBd-Zz-MDg" id="IFh-H3-YiX"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Iw5-fz-4wu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="A6c-bj-VLG"/>
+            </objects>
+            <point key="canvasLocation" x="2343" y="-14"/>
+        </scene>
+    </scenes>
+</document>
